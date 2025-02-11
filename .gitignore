@@ -3,22 +3,40 @@ logs
 *.log
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Dependencias
+node_modules/
+package-lock.json
+
+# Builds
+dist/
+dist-ssr/
 *.local
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Archivos del Editor
+.vscode/
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Archivos de Configuración y Variables de Entorno
+.env
+.env.local
+.env.development
+.env.production
+firebase-key.json
+
+# Archivos de Firebase
+.firebaserc
+firebase-debug.log
+
+# Caché de npm y Yarn
+.npm/
+.yarn/
+.pnp.*
